@@ -2,7 +2,7 @@ using NUnit.Framework;
 using System;
 using Task;
 
-namespace TestTask
+namespace tests
 {
     [TestFixture]
     public class Tests
