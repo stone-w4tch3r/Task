@@ -52,7 +52,8 @@ namespace tests
 
         [Test]
         public void CleanStackDontPops()
-        {
+            
+        {/*
             var exceptionCatched = false;
             try
             {
@@ -69,7 +70,11 @@ namespace tests
                 exceptionCatched = true;
             }
             if (exceptionCatched == false) Assert.Fail(); 
+            */
+            Assert.Throws<InvalidOperationException>(() => stack.Pop());
+
         }
+
 
         [Test]
         public void IsEmptyWorksCorrectly1()
@@ -115,6 +120,14 @@ namespace tests
         {
 
             Assert.AreEqual(0, 0);
+        }
+
+        [Test]
+        public void name1() //test from interview
+        {
+    //      var a = default(string);
+    //      var b = new Guid(a);
+            Assert.Pass();
         }
     }
 }

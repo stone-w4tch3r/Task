@@ -2,10 +2,10 @@
 {
     public class MyStack
     {
-        private int count; 
-        private Element last; 
+        private int count;
+        private Element last;
 
-        public int Count => count; 
+        public int Count => count;
         public bool IsEmpty => count == 0; 
 
         public MyStack() 
@@ -52,6 +52,11 @@
             Previous = previous;
             Value = value;
         }
+
+    }
+
+    public class Test //code from interview
+    {
 
     }
 }
